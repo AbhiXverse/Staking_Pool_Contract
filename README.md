@@ -30,7 +30,6 @@ The staking pool consists of two main contracts:
 
 - **Solidity**: Smart contract development
 - **Foundry**: Development framework and testing
-- **OpenZeppelin**: Security and standard implementations
 - **Forge**: Testing and deployment tools
 
 ## 📁 Project Structure
@@ -53,14 +52,13 @@ staking-pool/
 ### Prerequisites
 - [Foundry](https://book.getfoundry.sh/getting-started/installation)
 - Git
-- Node.js (optional, for additional tooling)
 
 ### Installation Steps
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/staking-pool.git
-   cd staking-pool
+   git clone https://github.com/YOUR_USERNAME/staking-pool-contract.git
+   cd staking-pool-contract
    ```
 
 2. **Install dependencies**
@@ -203,39 +201,6 @@ Ran 17 tests for test/StakingPoolTest.sol:StakingPoolTest
 | `transfer(address to, uint256 amount)` | Public | Transfer tokens |
 | `approve(address spender, uint256 amount)` | Public | Approve token spending |
 
-## 🚀 Deployment
-
-### Local Deployment
-
-1. **Start local blockchain**
-   ```bash
-   anvil
-   ```
-
-2. **Deploy contracts**
-   ```bash
-   forge script script/Deploy.s.sol --rpc-url http://localhost:8545 --private-key YOUR_PRIVATE_KEY --broadcast
-   ```
-
-### Testnet Deployment
-
-```bash
-# Deploy to Sepolia testnet
-forge script script/Deploy.s.sol --rpc-url $SEPOLIA_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify
-
-# Deploy to other testnets
-forge script script/Deploy.s.sol --rpc-url $GOERLI_RPC_URL --private-key $PRIVATE_KEY --broadcast --verify
-```
-
-## 🎯 Future Enhancements
-
-- [ ] **Governance Token Integration**: Add governance features
-- [ ] **Multiple Reward Tokens**: Support for multiple reward token types
-- [ ] **Staking Tiers**: Implement different staking tiers with varying rewards
-- [ ] **Lock-up Periods**: Add time-locked staking options
-- [ ] **Emergency Withdraw**: Implement emergency withdrawal mechanisms
-- [ ] **Rewards Multiplier**: Dynamic reward multipliers based on staking duration
-- [ ] **Frontend Interface**: Web3 frontend for easy interaction
 
 ## 🤝 Contributing
 
@@ -249,21 +214,6 @@ forge script script/Deploy.s.sol --rpc-url $GOERLI_RPC_URL --private-key $PRIVAT
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/YOUR_USERNAME/staking-pool/issues) page
-2. Create a new issue with detailed description
-3. Join our community discussions
-
-## 📞 Contact
-
-- **Developer**: Abhishek
-- **GitHub**: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
-- **Project Link**: [https://github.com/YOUR_USERNAME/staking-pool](https://github.com/YOUR_USERNAME/staking-pool)
-
----
 
 ## 🏆 Test Results Summary
 
@@ -291,5 +241,5 @@ Suite result: ✅ ok. 17 passed; 0 failed; 0 skipped
 Total time: 36.72ms (28.08ms CPU time)
 ```
 
-**Made with ❤️ by Abhishek**
+**Made with ❤️ by Abhi**
 
