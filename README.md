@@ -57,8 +57,8 @@ staking-pool/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/staking-pool-contract.git
-   cd staking-pool-contract
+   git clone https://github.com/AbhiXverse/Staking_Pool_Contract.git
+   cd Staking_Pool_Contract
    ```
 
 2. **Install dependencies**
